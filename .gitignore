@@ -1,0 +1,67 @@
+# Data files - CSV files containing sensitive or large datasets
+*.csv
+states/**/*.csv
+states/sp/sp.csv
+
+# Excel files - Data files
+*.xlsx
+*.xls
+*.xlsm
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.dbf
+
+# Large data files
+*.parquet
+*.h5
+*.hdf5
+*.pickle
+*.pkl
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environment
+datasus/
+venv/
+env/
+ENV/
+
+# VS Code settings (optional - you may want to keep these)
+.vscode/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Log files
+*.log
+
+# Backup files
+*.bak
+*.backup
+
+# Compressed files (data archives)
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# Output files that are generated
+output.*
