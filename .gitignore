@@ -6,6 +6,7 @@ states/sp/sp.csv
 # Specific folder
 states/sc
 states/pr
+streamlit/
 
 # Excel files - Data files
 # *.xlsx
