@@ -1,12 +1,16 @@
 # Data files - CSV files containing sensitive or large datasets
-*.csv
-states/**/*.csv
+# *.csv
+# states/**/*.csv
 states/sp/sp.csv
 
+# Specific folder
+states/sc
+states/pr
+
 # Excel files - Data files
-*.xlsx
-*.xls
-*.xlsm
+# *.xlsx
+# *.xls
+# *.xlsm
 
 # Database files
 *.db

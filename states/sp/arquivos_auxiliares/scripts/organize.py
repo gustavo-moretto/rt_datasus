@@ -2,8 +2,12 @@ import os
 import shutil
 
 # organizing files from datasus
+# orginal_path: path to the directory where the files are located
+# state: two-letter abbreviation of the state (e.g., 'sp' for São Paulo
 def organize_files(original_path:str, state:str, start_year: 8, end_year: int = 25):
-    
+    print('')
+    print(original_path)
+    print('')
     state = state.upper()
     file_structure = 'AR' + state
     type = '.dbc'
@@ -23,6 +27,7 @@ def organize_files(original_path:str, state:str, start_year: 8, end_year: int = 
         else:
             months.append(str(m))
 
+    # creating directory for each year
     for y in years:
         path = os.path.join(original_path, y)        
         # creating directory if it does not exist
@@ -32,7 +37,7 @@ def organize_files(original_path:str, state:str, start_year: 8, end_year: int = 
         else:
             print(f"Directory already exists: {y}")
 
-
+    # checking for files and moving them to the corresponding directory
     for y in years:
         path = os.path.join(original_path, y)
         # creating directory for each month
@@ -46,4 +51,4 @@ def organize_files(original_path:str, state:str, start_year: 8, end_year: int = 
                 shutil.move(file_name, path)                
                 print(f"Moved {file_name} to {y}/")
 
-organize_files('sc', 'sc', 14, 25)
+organize_files('C:\\Users\\175 MX\\Documents\\Gustavo\\datasus\\data_rt_states\\states\\sc', 'sc', 8, 25)
