@@ -3,6 +3,9 @@
 # states/**/*.csv
 states/sp/sp.csv
 
+# Python files
+data_rt_states/dados_rt.ipynb
+
 # Specific folder
 states/sc
 states/pr
@@ -69,4 +72,4 @@ desktop.ini
 *.tar.gz
 
 # Output files that are generated
-output.*
+output.dbf
