@@ -5,6 +5,8 @@ states/sp/sp.csv
 
 # Python files
 data_rt_states/dados_rt.ipynb
+dados_rt.ipynb
+**/dados_rt.ipynb
 
 # Specific folder
 states/sc
